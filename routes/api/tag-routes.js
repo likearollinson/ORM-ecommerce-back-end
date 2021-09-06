@@ -60,7 +60,7 @@ router.put('/:id', async (req, res) => {
     );
 
     if (!updateTag[0]) {
-      res.status(404).json(message: 'Tag not found');
+      res.status(404).json({ message: 'Tag not found' });
       return;
     }
 
