@@ -122,7 +122,7 @@ router.put('/:id', (req, res) => {
         res.status(400).json({ message: 'No product was found with this id' });
         return;
       }
-      res.json(dbProductData);
+      res.json('Product Updated');
     })
     .catch(err => {
       console.log(err);
